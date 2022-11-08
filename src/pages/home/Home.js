@@ -4,8 +4,9 @@ import Sidebar from '../../components/sidebar/Sidebar';
 import Widget from '../../components/widget/Widget.jsx';
 import Featured from '../../components/featured/Featured.jsx';
 import Chart from '../../components/charts/Chart';
-
+import List from '../../components/table/Table.jsx';
 import './home.scss';
+// import { List } from '@mui/material';
 
 const Home = () => {
   return (
@@ -22,6 +23,10 @@ const Home = () => {
         <div className="charts">
           <Featured/>
           <Chart/>
+        </div>
+        <div className="listContainer">
+          <div className="listTitle">Latest  Records</div>
+          <List/>
         </div>
       </div>
     </div>
