@@ -9,14 +9,20 @@ const Sidebar = () => {
           <hr />
           <div className="center">
               <ul>
-                  <DashboardIcon/>
-                  <li><span>Dashboard</span></li>
-                  <li><span>Dashboard</span></li>
-                  <li><span>Dashboard</span></li>
-                  <li><span>Dashboard</span></li>
+                  <p className="title"></p>
+                 
+                  <li> <DashboardIcon className="icon"/><span>Dashboard</span></li>
+                  <li><span>Users</span></li>
+                  <li><span>Products</span></li>
+                  <li><span>Status</span></li>
+                  <p className="title">Me</p>
+                  <li><span>Log Out</span></li>
               </ul>
           </div>
-          <div className="bottom">color option</div>
+          <div className="bottom">
+              <div className="colorOption"></div>
+              <div className="colorOption"></div>
+          </div>
     </div>
   )
 }
