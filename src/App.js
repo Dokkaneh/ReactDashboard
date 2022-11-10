@@ -10,9 +10,10 @@ import {
 }
   from "react-router-dom";
 import { productInputs, userInputs } from "./formSource";
+
 function App() {
   return (
-    <div>
+    <div className="app dark">
       <Router>
         <Routes>
           <Route path="/" >

@@ -1,5 +1,6 @@
 import "./Sidebar.scss";
 import DashboardIcon from '@mui/icons-material/Dashboard';
+import { NavLink } from "react-router-dom";
 const Sidebar = () => {
   return (
       <div className="sidebar">
@@ -10,10 +11,15 @@ const Sidebar = () => {
           <div className="center">
               <ul>
                   <p className="title"></p>
-                 
-                  <li> <DashboardIcon className="icon"/><span>Dashboard</span></li>
-                  <li><span>Users</span></li>
-                  <li><span>Products</span></li>
+                 <NavLink to="/" style={{textDecoration:"none"}}>
+                      <li> <DashboardIcon className="icon" /><span>Dashboard</span></li>
+                  </NavLink>
+                  <NavLink to="/users" style={{textDecoration:"none"}}>
+                      <li><span>Users</span></li>
+                  </NavLink>
+                  <NavLink to="/products" style={{textDecoration:"none"}}>
+                      <li><span>Products</span></li>
+                      </NavLink>
                   <li><span>Status</span></li>
                   <p className="title">Me</p>
                   <li><span>Log Out</span></li>
