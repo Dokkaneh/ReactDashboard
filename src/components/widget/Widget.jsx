@@ -19,9 +19,9 @@ const Widget = ({ type }) => {
         )
       }
       break;
-      case 'order':
+      case 'Parks':
         data = {
-          title: "orders",
+          title: "Parks",
           isMoney: true,
           link: "see all basckets",
           icon: (
