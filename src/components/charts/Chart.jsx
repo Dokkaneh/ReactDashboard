@@ -10,12 +10,12 @@ const data = [
   { name: "JUN", total: 1200 }
 ];
  
-const Chart = () => {
+const Chart = ({ aspect, title }) => {
  
   return (
     <div className='chart'>
-      <div className="title">Last 6 months revenue</div>
-      <ResponsiveContainer width="100%" aspect={2/1} >
+      <div className="title">{title}</div>
+      <ResponsiveContainer width="100%" aspect={aspect} >
       <BarChart width={300} height={250} data={data}>
   <CartesianGrid strokeDasharray="2 2" className='chartGrid' />
   <XAxis dataKey="name" />

@@ -4,7 +4,7 @@ import Sidebar from '../../components/sidebar/Sidebar';
 import Widget from '../../components/widget/Widget.jsx';
 import Featured from '../../components/featured/Featured.jsx';
 import Chart from '../../components/charts/Chart';
-import List from '../../components/table/Table.jsx';
+import ListTable from '../../components/table/Table.jsx';
 import './home.scss';
 // import { List } from '@mui/material';
 
@@ -22,11 +22,11 @@ const Home = () => {
         </div>
         <div className="charts">
           <Featured/>
-          <Chart/>
+          <Chart title="Last 6 months revenue" aspect={ 2/1} />
         </div>
         <div className="listContainer">
           <div className="listTitle">Latest  Records</div>
-          <List/>
+          <ListTable/>
         </div>
       </div>
     </div>
