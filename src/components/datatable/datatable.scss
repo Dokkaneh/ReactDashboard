@@ -1,9 +1,17 @@
 .datatable {
     height: 600px;
-    padding: 20px;
+    padding: 30px;
     
+    .dataTableButton{
+      border-radius: 5px;
+      border: 3px solid ;
+      size: 100px;
+      color: rgb(17, 17, 17);
+      background-color: aliceblue;
+      border-color: black;
+    }
     .datatableTitle{
-      width: 100%;
+      width: 80%;
       font-size: 24px;
       color: gray;
       margin-bottom: 10px;

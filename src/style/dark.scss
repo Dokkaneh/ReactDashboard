@@ -2,6 +2,7 @@
 
     background-color:#222;
     color: rgb(221, 219, 219);
+
     .chartGrid{
         stroke: rgb(64, 51, 34);
     }
@@ -15,8 +16,14 @@
         color: #999;
         border: #333;
         .search{
-            border-color: grey;
+            border-color: orangered;
+            color: rgba(255, 255, 255, 0.625);
+            ::placeholder{
+                color: rgba(255, 255, 255, 0.625);
+
+            }
         }
+      
     }
     .sidebar{
         background-color:  #111;
@@ -38,12 +45,21 @@
                 .icon{
                     color: orangered ;
                 }
+                span{
+                    font-size: 13px;
+                    font-weight: 600;
+                    color:rgba(255, 255, 255, 0.649);                    margin-left: 10px;
+                }
             }
         }
     }
     .datatable{
         .datagrid{
             color:rgba(255, 255, 255, 0.649);
+        }
+        .link{
+            color: aliceblue;
+            text-decoration: none;
         }
         .viewButton .deleteButton .cellWithStatus{
             color:rgba(255, 255, 255, 0.649); 
@@ -52,4 +68,12 @@
     input{
         background-color: transparent;
     }
+    .wrapper{
+        padding: 14px 30px;
+        border-bottom: 3px double orangered;
+        align-items: center;
+        background-color: black;}
+        .MuiButtonBase-root{
+            color: white;
+        }
 }

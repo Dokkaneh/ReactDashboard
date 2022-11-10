@@ -25,11 +25,8 @@ const Datatable = () => {
   return (
     <div className='datatable'>
       <div className="dataTableTitle">
-        Add new records
       </div>
-      <Link to="/users/new" className='link'>
-      Add New
-      </Link>
+   
       <DataGrid
         className='datagrid'
         rows={data}
@@ -39,6 +36,9 @@ const Datatable = () => {
         checkboxSelection
         disableSelectionOnClick
       />
+          <Link to="/users/new" className='link'>
+     <button className='dataTableButton'> Add New</button>
+      </Link>
     </div>
   )
 }

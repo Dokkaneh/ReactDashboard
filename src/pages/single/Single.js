@@ -10,7 +10,6 @@ const Single = () => {
       <Sidebar />
       <div className="singleContainer">
         <Navbar />
-        Single
         <div className="top">
           <div className="left">
             <div className="editButton">Edit</div>
